@@ -1,7 +1,7 @@
 
 <div class="post-details" *ngFor="let posts of redditPosts,">
     <h2>Title: {{posts.data.title}}</h2>
-    <div class="post-image">{{posts.data.thumbnail}}</div>
+    <img class="post-image" src="{{posts.data.thumbnail}}">
     <div class="post-image">Source: {{posts.data.url}}</div>
 
 </div> 

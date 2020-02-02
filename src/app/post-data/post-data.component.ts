@@ -19,10 +19,10 @@ constructor(private _service : ApiServiceService, private route: ActivatedRoute)
 
     this.title = this.route.snapshot.params.title;
 
-    this._service.getPost(this.title).subscribe( data => {
+    this._service.getRedditPost().subscribe( data => {
       this.post = data;
       // this.thumbnail = data;
-        // this.loading = false;
+  
 
       let i = 0;
     });

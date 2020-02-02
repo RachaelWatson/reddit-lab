@@ -12,8 +12,7 @@ constructor(private http: HttpClient) { }
 getRedditPost() {
 return this.http.get(this.apiUrl);
 }
-
-getPost( title : any ) {
-    return this.http.get(`${this.apiUrl}/${title}`);
-  }
 }
+// getPost( title : any ) {
+//     return this.http.get(`${this.apiUrl}/${title}`);
+//   }

@@ -8,14 +8,16 @@ import { Component, OnInit, Input } from '@angular/core';
 export class PostDetailsComponent implements OnInit {
 
 
-@Input()
-title : string;
-@Input() thumbnail : any;
+@Input()title : string;
+
+@Input() thumbnail : any; 
+
+@Input() url : any;
 
 constructor() { }
 
-ngOnInit() {
-}
+ ngOnInit() {
+ }
 
-}
+ }
 

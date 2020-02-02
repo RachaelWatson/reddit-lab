@@ -17,8 +17,8 @@ export class RedditPostComponent implements OnInit {
   
   ngOnInit() {
     this._service.getRedditPost().subscribe( (data : any) => {
-    this.redditPosts = data ;
-    console.log(data);
+    this.redditPosts = data.children ;
+    console.log(data.children);
   });
 
 }

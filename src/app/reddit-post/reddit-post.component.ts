@@ -1,6 +1,6 @@
 import { ApiServiceService } from '../api-service.service'
 import { IRedditInfo } from '../reddit-info';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 
 @Component({
@@ -12,15 +12,18 @@ import { Component, OnInit } from '@angular/core';
 
 export class RedditPostComponent implements OnInit {
 
-  constructor( private _service : ApiServiceService) { }
+  // constructor( private _service : ApiServiceService) { }
 
-  redditPosts : IRedditInfo[];
+  // redditPosts : IRedditInfo[];
+  
+  // @Input()title : string;
+
   
   ngOnInit() {
-    this._service.getRedditPost().subscribe( (data: any) => {
-    this.redditPosts = data.children ;
-    console.log(data.children);
-  });
+  //   this._service.getRedditPost().subscribe( (data: any) => {
+  //   this.redditPosts = data.data.children ;
+  //   console.log(data.data.children);
+  // });
 
 }
 }

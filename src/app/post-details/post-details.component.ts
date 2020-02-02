@@ -1,4 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
+// import { RedditPostComponent } from './reddit-post/reddit-post.component'
+import { IRedditInfo } from '../reddit-info';
+import { ApiServiceService} from '../api-service.service'
+
 
 @Component({
   selector: 'app-post-details',
@@ -7,16 +11,22 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PostDetailsComponent implements OnInit {
 
+// @Input() RedditPostComponent;
+
+redditPosts : IRedditInfo[];
 
 @Input()title : string;
 
-@Input() thumbnail : any; 
+@Input() thumbnail : string; 
 
-@Input() url : any;
+@Input() url : string;
 
-constructor() { }
+constructor( private _service : ApiServiceService) { }
 
- ngOnInit() {
+ ngOnInit() {  this._service.getRedditPost().subscribe( (data: any) => {
+  this.redditPosts = data.data.children ;
+  console.log(data.data.children);
+});
  }
 
  }

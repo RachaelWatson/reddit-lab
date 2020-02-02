@@ -1,7 +1,7 @@
 <div class="reddit-Post">
     <h1>Poor Woman's Reddit</h1>
     <button (click)="callReddit()">API TEST</button>
-    <app-post-details *ngFor="let posts of redditPosts, let i = index;" [title]="posts.title" [thumbnail]="posts.thumbnail"></app-post-details>
+    <app-post-details *ngFor="let posts of redditPosts, let i = index;" [title]="posts.title" [thumbnail]="posts.thumbnail" [url]="posts.url"></app-post-details>
 </div>
 
 <!-- [postNumber]="i + 1" -->

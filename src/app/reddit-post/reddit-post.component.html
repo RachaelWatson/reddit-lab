@@ -1,0 +1,6 @@
+<div class="reddit-Post">
+    <h1>Poor Woman's Reddit</h1>
+    <app-post-details *ngFor="let post of redditPosts, let i = index;" [title]="post.title" [thumbnail]="post.thumbnail"></app-post-details>
+</div>
+
+<!-- [postNumber]="i + 1" -->

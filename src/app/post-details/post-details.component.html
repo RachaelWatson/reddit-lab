@@ -1,7 +1,11 @@
-
 <div class="post-details" *ngFor="let posts of redditPosts,">
-    <h2>Title: {{posts.data.title}}</h2>
-    <img class="post-image" src="{{posts.data.thumbnail}}">
-    <div class="post-image">Source: {{posts.data.url}}</div>
+    <div class="post-children">
 
-</div> 
+        <img class="post-image" src="{{posts.data.thumbnail}}">
+        <div class="text-heart-container">
+            <img class="heart-image" src="/assets/heart.png" alt="Heart Icon">
+        </div>
+        <p class="title-text">{{posts.data.title}}</p>
+        <div class="post-image">{{posts.data.url}}</div>
+    </div>
+</div>

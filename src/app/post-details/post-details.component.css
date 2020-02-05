@@ -1,5 +1,6 @@
 .post-image{
     width: 400px;
+    box-shadow: 5px 5px 7px 2.5px #2e2b2b;
 }
 
 .post-details {
@@ -18,10 +19,26 @@
 .text-heart-container{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.heartlink-stack{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 45px;
+    margin-left: 5px;
+    margin-top: 10px;
+   align-items:  flex-start;
+   
 }
 .title-text{
     width: 320px;
+    margin-left: 8px;
+}
+.link {
+    width: 2rem;
 }
 .heart-image{
     width: 2rem;

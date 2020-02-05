@@ -3,9 +3,13 @@
 
         <img class="post-image" src="{{posts.data.thumbnail}}">
         <div class="text-heart-container">
-            <img class="heart-image" src="/assets/heart.png" alt="Heart Icon">
+            <div class="heartlink-stack">
+                <img class="heart-image" src="/assets/heart.png" alt="Heart Icon">
+                <a href="{{posts.data.url}}"><img class="link" src="/assets/link.png"></a> 
+            </div>
+         
+            <p class="title-text">{{posts.data.title}}</p>
         </div>
-        <p class="title-text">{{posts.data.title}}</p>
-        <div class="post-image">{{posts.data.url}}</div>
+        
     </div>
 </div>
